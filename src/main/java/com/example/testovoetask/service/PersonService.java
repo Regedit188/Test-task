@@ -84,6 +84,6 @@ public class PersonService {
 
     private Person findPersonSafe(Long id) {
         return personRepository.findById(id)
-            .orElseThrow(() -> new CustomException(CommonErrorCode.ENTITY_NOT_FOUND)); // неправильно обрабатывается, нет текста ошибки
+            .orElseThrow(() -> new CustomException(CommonErrorCode.ENTITY_NOT_FOUND));
     }
 }
