@@ -33,5 +33,5 @@ public class Person {
 
     @OneToMany (mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
-    private List<Car> cars; // почему то не удаляются каскадно
+    private List<Car> cars;
 }
